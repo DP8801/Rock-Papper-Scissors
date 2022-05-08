@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --db: #112b3c;
+  --lb: #20537582;
+  --or: #f66b0e;
+  --dor: #6f2e03;
+  --wh: #efefef;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-size: 1em;
+  background-color: var(--db);
+  color: var(--wh);
+}
+
+#final-result {
+  padding: 2em;
+  font-size: 2em;
+  background-color: var(--or);
+  text-align: center;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.computer-block {
+  background-color: var(--lb);
+  width: 50%;
+  text-align: center;
+  margin: 1.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.user-block {
+  background-color: var(--lb);
+  width: 50%;
+  text-align: center;
+  margin: 1.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  background: var(--wh);
+  border: 1px solid var(--db);
+  box-shadow: 0px 2px 0 var(--db), 2px 4px 6px var(--db);
+  font-weight: 400;
+  transition: all 150ms linear;
+  padding: 0.8em;
+  margin: 0 0.2em;
+  border-radius: 0.15em;
+}
+
+button:hover {
+  background: var(--or);
+  border: 1px solid rgba(#000, 0.05);
+  box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dor);
+  text-shadow: 0px 1px 1px var(--wh);
+  transition: all 250ms linear;
+}
+
+img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width: 358px) {
+  #final-result {
+    font-size: 1.25em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .computer-block,
+  .user-block {
+    width: 100%;
+  }
+}
