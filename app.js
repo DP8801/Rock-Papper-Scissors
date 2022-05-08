@@ -2,7 +2,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const computerImage = document.getElementById('computer-image');
 const userChoiceDisplay = document.getElementById('user-choice');
 const userImage = document.getElementById('user-image');
-const imageLink = "/images";
+const imageLink = "images";
 const ext = ".svg";
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
@@ -31,13 +31,13 @@ possibleChoices.forEach(function (possibleChoice) {
 
 function generateImage(choice) {
     if (choice === "rock") {
-        return `${imageLink}/fist.png`;
+        return `${imageLink}/fist.svg`;
     }
     else if (choice === "scissors") {
-        return `${imageLink}/two.png`;
+        return `${imageLink}/two.svg`;
     }
     else if (choice === "paper") {
-        return `${imageLink}/privacy.png`;
+        return `${imageLink}/privacy.svg`;
     }
 }
 
