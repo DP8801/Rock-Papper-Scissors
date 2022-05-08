@@ -2,8 +2,13 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const computerImage = document.getElementById('computer-image');
 const userChoiceDisplay = document.getElementById('user-choice');
 const userImage = document.getElementById('user-image');
+<<<<<<< HEAD
 const imageLink = "/images";
 const ext = ".svg";
+=======
+const imageLink = "/images/"; 
+const ext = ".svg"; 
+>>>>>>> 9256d8af95c46c57938e4a0c924f61bb470871b0
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 let userChoice;
