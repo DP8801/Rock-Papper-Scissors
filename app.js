@@ -34,7 +34,7 @@ function generateImage(choice){
         return imageLink+"fist"+ext;
     } 
     else if(choice === "scissors"){
-        return imageLink+"two-copy"+ext;
+        return imageLink+"two"+ext;
     }
     else if(choice === "paper"){
         return imageLink+"privacy"+ext;
